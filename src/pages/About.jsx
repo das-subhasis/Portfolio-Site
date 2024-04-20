@@ -1,9 +1,9 @@
 import React from 'react'
 import Profile from '../assets/images/profile1.jpg'
 
-const About = () => {
+const About = ({aboutRef}) => {
     return (
-        <div className='mt-24 space-y-24 font-titillium'>
+        <div ref={aboutRef} className='pt-24 mb-20 space-y-24 font-titillium'>
             <div className='grid text-7xl font-medium text-white  place-content-center mx-auto'>Know Me</div>
             <div className='text-white h-fit place-content-center flex flex-wrap gap-24 items-center'>
                 <div className='rounded-xl shadow-img_shadow transition duration-300 ease-out'><img src={Profile} alt="" width={400} className='rounded-xl' /></div>
